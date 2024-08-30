@@ -102,3 +102,49 @@ header nav a {
     border-radius: 50%;
     border: solid 5px rgba(231,15,170,1);
 }
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выровнять содержимое по центру */
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #CCCCCC;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.stack h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.stack p {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.stack .stack-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.stack .stack-logos .logo {
+    flex: 1 1 calc(16.66% - 100%);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.stack .stack-logos .logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
