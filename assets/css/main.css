@@ -16,6 +16,7 @@ a {
     text-decoration: none;
     color: #000;
     list-style: none;
+
 }
 
 ul {
@@ -27,36 +28,43 @@ ul {
     max-width: 1204px;
 }
 
-header {
+header,
+footer {
     padding: 41px 0;
 }
 
-header nav {
+header nav,
+footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     max-width: 100%;
 }
 
-header nav > a img {
+header nav>a img,
+.contacts_info>img {
     width: 50px;
     height: 50px;
     border-radius: 45px;
-    border: solid 3px rgb(231,15,170);
+    border: solid 3px rgb(231, 15, 170);
 }
 
-header nav ul {
+header nav ul,
+footer nav ul {
     display: flex;
     justify-content: space-between;
     font-weight: 500;
     font-size: 20px;
 }
 
-header nav ul li {
+header nav ul li,
+footer nav ul li {
     margin: 0 20px;
 }
 
-header nav ul li a {
+header nav ul li a,
+footer nav ul li a {
     color: #A7A7A7;
     position: relative;
 }
@@ -78,7 +86,7 @@ header nav a {
 .hero {
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 40px;
     align-items: center;
 }
 
@@ -91,7 +99,7 @@ header nav a {
 }
 
 .hero h1.name {
-    background: linear-gradient(90deg, rgba(19,176,245,1) 3%, rgba(231,15,170,1) 100%);
+    background: linear-gradient(90deg, rgba(19, 176, 245, 1) 3%, rgba(231, 15, 170, 1) 100%);
     background-clip: text;
     color: transparent;
 }
@@ -100,17 +108,17 @@ header nav a {
     height: 349px;
     width: 349px;
     border-radius: 50%;
-    border: solid 5px rgba(231,15,170,1);
+    border: solid 5px rgba(231, 15, 170, 1);
 }
 
 .stack {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Выровнять содержимое по центру */
+    align-items: center;
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: #CCCCCC;
-    margin-top: 100px;
+    margin-top: 75px;
     margin-bottom: 50px;
 }
 
@@ -147,4 +155,71 @@ header nav a {
     width: 80px;
     height: 80px;
     object-fit: contain;
+}
+
+.contacts_info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+
+.contacts_info .contacts {
+    color: #A7A7A7;
+    font-family: 'DM Sans' sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.contacts_info .links a img {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.contacts_info .links a img:last-child {
+    padding-left: 0;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid rgba(204, 204, 204, 0.3);
+}
+
+footer {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul {
+    font-size: 18px;
+    font-weight: 400;
+    color: #A7A7A7;
+    font-family: 'DM Sans' sans-serif;
+}
+
+footer nav ul li {
+    margin: 0 20px;
+}
+
+footer nav ul li:first-child {
+    margin-left: 0;
+}
+
+footer .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer .info a {
+    background: linear-gradient(90deg, rgba(19, 176, 245, 1) 3%, rgba(231, 15, 170, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    margin-left: 10px;
 }
