@@ -174,19 +174,132 @@ header nav a {
     display: inline-block;
 }
 
-.contacts_info .links a img {
+.contacts_info .contact_links a img {
     width: 30px;
     height: 30px;
     padding-right: 10px;
 }
 
-.contacts_info .links a img:last-child {
+.contacts_info .contact_links a img:last-child {
     padding-left: 0;
 }
 
 .line {
     border: none;
     border-top: 2px solid rgba(204, 204, 204, 0.3);
+}
+
+.projects {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects .title {
+    text-align: center;
+}
+
+.projects h1 {
+    font-family: 'Poppins' sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.projects p {
+    font-family: 'Poppins' sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #A7A7A7;
+    margin-bottom: 30px;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(3, 373px);
+    gap: 30px;
+}
+
+.project {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 373px;
+    height: 567px;
+    background: #363636;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project > img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.info-block {
+    font-family: 'Poppins', sans-serif;
+    color: #CCCCCC;
+    text-align: left;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.info-block h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px 0 10px 15px;
+}
+
+.info-block p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0px 0 15px 15px;
+}
+
+.info-block h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0 10px 15px;
+}
+
+.info-block h4 span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.info-block .links {
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.info-block a {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #007BFF;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.info-block a img {
+    margin-right: 8px;
+    height: 16px;
+    width: 16px; 
+}
+
+.info-block a:hover {
+    background: #0056b3;
 }
 
 footer {
