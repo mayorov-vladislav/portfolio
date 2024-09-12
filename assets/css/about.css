@@ -1,0 +1,23 @@
+body {
+    font-family: 'Poppins' sans-serif;
+}
+
+section {
+    max-width: 100%;
+    width: 708px;
+    padding-top: 30px;
+}
+
+section h1 {
+    font-weight: 700;
+    font-size: 42px;
+    color: #42446E;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #666666;
+}
+
